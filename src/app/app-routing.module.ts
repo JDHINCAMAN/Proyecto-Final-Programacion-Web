@@ -8,6 +8,7 @@ import {AgregarProductoComponent} from "./agregar-producto/agregar-producto.comp
 import {DetalleDeProductoComponent} from "./detalle-de-producto/detalle-de-producto.component";
 import {TerminarCompraComponent} from "./terminar-compra/terminar-compra.component";
 import {DetalleDeVentaComponent} from "./detalle-de-venta/detalle-de-venta.component";
+import { NotFoundComponent } from './not-found/notFound.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,7 @@ const routes: Routes = [
   {path: 'terminar_compra', component: TerminarCompraComponent},
   {path: 'detalle-venta/:id', component: DetalleDeVentaComponent},
   {path: '', redirectTo: "/tienda", pathMatch: "full"},
-  {path: '**', redirectTo: "/tienda"},
+  {path: '**', component: NotFoundComponent},
 ];
 
 @NgModule({

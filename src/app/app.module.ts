@@ -33,6 +33,7 @@ import {MatMenuModule} from "@angular/material/menu";
 import { TerminarCompraComponent } from './terminar-compra/terminar-compra.component';
 import {MatStepperModule} from "@angular/material/stepper";
 import { DetalleDeVentaComponent } from './detalle-de-venta/detalle-de-venta.component';
+import { NotFoundComponent } from './not-found/notFound.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { DetalleDeVentaComponent } from './detalle-de-venta/detalle-de-venta.com
     TarjetaProductoComponent,
     DetalleDeProductoComponent,
     TerminarCompraComponent,
-    DetalleDeVentaComponent
+    DetalleDeVentaComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
